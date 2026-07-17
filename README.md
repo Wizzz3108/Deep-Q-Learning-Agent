@@ -1,10 +1,43 @@
-# CS-370-Pirate-Intelligent-Agent-Project
+# Deep Q-Learning Agent
 
-# For this project, I completed the implementation of a pirate intelligent agent using deep Q-learning. The starter code provided the overall framework for the project, including the TreasureMaze environment, the GameExperience replay class, helper functions for displaying and testing the maze, and the neural network model used to estimate Q-values. The notebook also included a partially completed qtrain() function with pseudocode explaining how the training algorithm should work.
-# My primary responsibility was implementing the deep Q-learning algorithm inside the qtrain() function. I wrote the logic that reset the environment at random starting positions, selected actions using an exploration versus exploitation strategy, stored experiences in replay memory, trained the neural network using batches of previous experiences, updated the target network during training, tracked the agent's performance over time, adjusted the exploration rate, and determined when training should stop after consistently achieving a successful completion rate. After implementing these components, I trained the model until the pirate agent consistently found the optimal path to the treasure from every valid starting location.
+A reinforcement learning project implementing a deep Q-learning agent that learns optimal navigation strategies through experience and neural network training.
 
-# Computer scientists solve real-world problems by designing algorithms, developing software, and creating systems that can make intelligent decisions. Their work extends far beyond writing code because they must analyze problems, evaluate different solutions, and develop systems that are both efficient and reliable. Artificial intelligence and machine learning are becoming increasingly important in many industries, allowing computers to recognize patterns, make predictions, and automate complex tasks that would otherwise require human decision-making.
+## Overview
 
-# This course reinforced the importance of breaking a complex problem into smaller, manageable pieces before developing a solution. Rather than trying to solve the entire project at once, I focused on understanding the provided code, learning how each class interacted with the others, and implementing one portion of the algorithm at a time. I tested the results frequently and used the model's training performance to determine whether changes improved the agent's ability to learn. This structured, step-by-step approach helped me identify issues more easily while gaining a better understanding of how reinforcement learning algorithms improve through repeated experience.
+This project focused on developing an intelligent agent using deep reinforcement learning. The agent was trained using a deep Q-learning algorithm to navigate a maze environment and locate treasure from different starting positions.
 
-# As a computer scientist, I have a responsibility to develop systems that are accurate, reliable, and fair. Artificial intelligence systems should be tested thoroughly to ensure they perform as intended and do not produce harmful or biased outcomes. It is also important to consider how decisions made by AI can affect users and organizations. Developers should be transparent about the limitations of their models, protect user data, and create solutions that prioritize safety, security, and responsible use. Following these ethical principles helps build trust in AI systems while ensuring technology benefits both users and the organizations that deploy it.
+The project utilized a provided TreasureMaze environment, experience replay system, helper functions, and neural network architecture. The primary implementation involved completing the training algorithm by managing exploration versus exploitation, storing experiences, training the neural network, updating target values, and improving performance through repeated interactions with the environment.
+
+## Technologies
+
+- Python
+- TensorFlow / Keras
+- Reinforcement Learning
+- Deep Q-Learning (DQN)
+- Neural Networks
+- Jupyter Notebook
+
+## Highlights
+
+- Implemented a deep Q-learning training algorithm
+- Developed an AI agent capable of learning optimal navigation paths
+- Applied exploration versus exploitation strategies using epsilon decay
+- Used experience replay to improve training stability
+- Trained neural networks to estimate Q-values for decision-making
+- Evaluated agent performance through repeated training iterations
+
+## What I Learned
+
+This project strengthened my understanding of artificial intelligence and reinforcement learning concepts by requiring me to implement an agent that learns through experience rather than following predefined instructions.
+
+I learned how complex problems can be broken into smaller components by analyzing the existing environment, understanding how each class interacted, and implementing the learning algorithm incrementally. Testing model performance throughout training helped me understand how adjustments affect an agent's ability to improve over time.
+
+The project also reinforced the importance of responsible AI development. Intelligent systems must be tested thoroughly, evaluated for reliability, and designed with consideration for accuracy, fairness, and potential impact on users.
+
+## Future Improvements
+
+- Experiment with additional reinforcement learning algorithms
+- Optimize hyperparameters for faster training
+- Improve visualization of agent learning progress
+- Expand the environment complexity
+- Deploy the trained model into an interactive application
